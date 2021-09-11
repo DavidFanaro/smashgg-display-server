@@ -1,7 +1,7 @@
 const app = require("express")();
 const cors = require("cors")
 const server = require("http").createServer(app);
-const socket = require("socket.io")(server, {cors :{origin : '*:*'}});
+const socket = require("socket.io")(server, {cors :{origin : 'https://tourneyseatdisplay.surge.sh'}});
 var _ = require("lodash");
 const { GraphQLClient, gql } = require("graphql-request");
 // socket.set( 'origins', '*' ); 
