@@ -86,4 +86,4 @@ async function getSeating(tourney) {
     console.log("Error")
   }
 }
-server.listen(4000);
+server.listen(4000, () => console.log("Server has started"));
