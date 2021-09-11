@@ -1,11 +1,10 @@
 const app = require("express")();
 const cors = require("cors")
 const server = require("http").createServer(app);
-const socket = require("socket.io")(server);
+const socket = require("socket.io")(server, {cors :{origin : '*:*'}});
 var _ = require("lodash");
 const { GraphQLClient, gql } = require("graphql-request");
-io.set( 'origins', '*' );
-
+// socket.set( 'origins', '*' ); 
 app.use(cors())
 
 app.get("/", async (req, res) => {
