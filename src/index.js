@@ -1,7 +1,7 @@
 const app = require("express")();
 const server = require("http").createServer(app);
 const socket = require("socket.io")(server, {cors: {
-  origin: ["http://localhost:3000","tourneyseatdisplay.surge.sh"],
+  origin: ["http://localhost:3000","https://tourneyseatdisplay.surge.sh/"],
   methods: ["GET", "POST"]
 }});
 var _ = require("lodash");
